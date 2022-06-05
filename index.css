@@ -1,0 +1,39 @@
+body{
+    padding-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.imgs{
+    height: 700px;
+}
+
+.baslik{
+    border-left: 5px solid orangered;
+    padding-left: 3px;
+}
+
+.gri{
+    background-color: rgb(243, 243, 243);
+}
+
+.footer{
+    background-color: orangered;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: orangered;
+}

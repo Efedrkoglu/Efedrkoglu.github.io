@@ -1,94 +1,207 @@
-<html>
-    <head>
-        <title>Efe Durukoğlu</title>
-        <script src="indexscript.js" text="/javascript"></script>
-        <link rel="stylesheet" href="indexcss.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Efe Durukoglu</title>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 
-    <body>
-        <div id="header">
-            <div class="baslik"><strong>Efe Durukoğlu</strong></div>
-            <ul>
-                <li>
-                    <button class="mb" onclick="scrollA()">Anasayfa</button>
-                </li>
-                <li>
-                    <button class="mb" onclick="scrollH()">Hakkımda</button>
-                </li>
-                <li>
-                    <button class="mb" onclick="scrollO()">Okul</button>
-                </li>
-                <li>
-                    <button class="mb" onclick="scrolli()">İletisim</button>
-                </li>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: orangered; font-family: 'Quicksand', sans-serif;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Efe Durukoğlu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hakkimda">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#okul">Okul</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#iletisim">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proje.html">Proje</a>
+              </li>
             </ul>
-            <label>
-                <input type="checkbox" onclick="modswitch(),modswitchpage()" id="buton">
-                <div class="checkbox">
-                    <div></div>
-                </div>
-            </label>
+          </div>
+        </div>
+      </nav>
+      <!---->
+
+      <!-- slider -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/_var_opt_upload__ModuleCarousel_323_07-10-2020_042259634_S3.JPG" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/fakulte.jpg" class="d-block w-100 imgs" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/İnönü_University_Center_Campus.jpg" class="d-block w-100 imgs" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!---->
+
+      <!-- Hakkımda -->
+      <div class="container p-5 fs-5 gri" id="hakkimda" style="font-family: 'Quicksand', sans-serif;">
+        <h2 class="baslik">Hakkımda</h2>
+        
+        <div class="text-start">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit suscipit harum odit dolores? Fugiat consequuntur nobis dolores molestias sint? Iusto nisi tempora accusamus tenetur. Itaque accusantium placeat inventore repellendus natus?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, repudiandae distinctio magnam quas officia delectus nulla ea reiciendis cumque quidem iste non odit molestiae et dicta dignissimos veniam voluptatem rem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui omnis soluta repellat dolor tenetur excepturi non quis distinctio, dolores consequuntur corporis iste sit deserunt voluptatem ipsa sequi, vero repellendus!
+            </p>
+        </div>
+        <div class="container p-5" style="font-family: 'Quicksand', sans-serif;">
+          <h2 class="baslik">Bildiğim Diller</h2>
+          <div class="text-center fs-3">
+            HTML
+            <div class="progress mb-3"><div class="progress-bar" style="width: 70%; background-color: orangered; color: black;">70%</div></div>
+            JavaScript
+            <div class="progress mb-3"><div class="progress-bar" style="width: 60%; background-color: rgb(247, 223, 30); color: black;">60%</div></div>
+            C
+            <div class="progress mb-3"><div class="progress-bar" style="width: 85%; background-color: rgb(93, 107, 193); color: black;">85%</div></div>
+            Java
+            <div class="progress"><div class="progress-bar" style="width: 45%; background-color: orange; color: black;">45%</div></div>
+          </div>
+        </div>
+        <hr>
+    </div>
+    <!---->
+
+    <!-- Okul -->
+    <div class="container p-5 fs-5" id="okul" style="font-family: 'Quicksand', sans-serif;">
+      <h2 class="baslik">Okul</h2>
+
+      <div class="text-start">
+        <div class="text-center"><h2>İnönü Üniversitesi</h2></div>
+        <p>
+          İnönü Üniversitesi, 28 Ocak 1975 tarihinde Türkiye Büyük Millet Meclisinde, 25 Mart 1975 tarihinde ise Cumhuriyet Senatosunda kabul edilen ve 3 Nisan 1975 tarihli Resmî Gazete'de yayımlanarak yürürlüğe giren 1872 sayılı ‘İnönü Üniversitesi Kanunu’ ile kurulmuş olup, 1976-1977 eğitim-öğretim yılından itibaren eğitim hizmeti vermeye başlamıştır. 1984 yılına kadar şimdiki Sadreddin Konevî Anadolu İmam Hatip Lisesi binasında faaliyetlerini sürdüren Üniversitemiz, 1984-1985 Akademik Yılında mevcut yerleşkesine geçmiş ve hızla gelişmeye başlamıştır.
+        </p>
+        <p>
+          Ülkemizin saygın ve köklü üniversiteleri arasında yer alan İnönü Üniversitesi, 14 Fakülte, 1’i Devlet Konservatuvarı olmak üzere 2 yüksekokulu, 4 meslek yüksekokulu, 6 enstitü, 1 teknokent, Turgut Özal Tıp Merkezinin de aralarında bulunduğu 31 araştırma ve uygulama merkeziyle yaklaşık 40.000 öğrenciye eğitim ve öğretim hizmeti veren bir üniversitedir. Şehir merkezine 10 km mesafede bulunan üniversitemiz, 7000 dekarlık merkez yerleşkesinin yanında şehir merkezinde bulunan Malatya Meslek Yüksekokulu ve Malatya Organize Sanayi Bölgesinde yer alan Malatya OSB Meslek Yüksekokulu kampüsleriyle eğitim-öğretim, bilimsel araştırma ve uygulama faaliyetlerini sürdürmektedir.
+        </p>
+        <p>
+          1975 yılından bugüne hızla gelişen ve büyüyen üniversitemiz, bugüne kadar yaklaşık 150.000 mezun vererek ülkemizin bilim, düşünce, sanat, ekonomi ve sosyal alanlarında kendini ispat eden on binlerce nitelikli insan kaynağı yetiştirmiştir. İnönü Üniversitesi bugün de yüksek eğitim olanakları ve giderek artan başarı ivmesiyle ülkemizin ve bölgemizin aydınlık geleceğine katkı sağlamaya devam etmektedir.
+        </p>
+        <p>
+          Yerleşke alanı; yeterli altyapısı ve nitelikli eğitim tesisleriyle olduğu kadar, çok amaçlı kültür salonları, sosyal tesisleri, spor ve rekreasyon alanları ile öğrencilerin ders dışı zamanlarını en verimli biçimde değerlendirmelerine olanak sunmaktadır. Engellilere yönelik eğitim ve uygulama merkezlerinin yanında ‘Engelsiz Kampüs’ anlayışıyla da Türkiye'nin önde gelen üniversitelerinden biridir. Merkez yerleşkemizde öğrencilerimiz için özel kız ve erkek öğrenci yurtlarıyla barınma olanakları da mevcuttur.
+        </p>
+        <p>
+          Ayrıca merkez yerleşkemizde, Üniversitemizin adını taşıdığı büyük devlet adamı İsmet İnönü’nün anısına açılmış olan İnönü Müzesi ile Fen Edebiyat Fakültesi binasında İnönü Üniversitesi Kurumsal Müzesi bulunmaktadır.
+        </p>
+      </div>
+      <hr>
+    </div>
+    <!---->
+
+    <!-- İletişim -->
+    <div class="container gri p-5" id="iletisim" style="font-family: 'Quicksand', sans-serif;">
+      <h2 class="baslik">İletişim</h2>
+
+      <div class="container p-5">
+
+        <div class="row g-2">
+
+          <div class="col-md">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Ad">
+              <label for="floatingInput">Ad</label>
+            </div>
+          </div>
+  
+          <div class="col-md">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="Soyad">
+              <label for="floatingPassword">Soyad</label>
+            </div>
+          </div>
+
         </div>
 
-        <div id="page">
-            <div id="anasayfa">
-                <h2 class="h2">Anasayfa</h2>
-                <div class="textdiv">
-                    <img src="fakulte.jpg" alt="" id="img">
-                </div>
-            </div>
+        <div class="row g-2">
 
-            <div id="hakkimda">
-                <h2 class="h2">Hakkımda</h2>
-                <div class="textdiv">
-                    <div id="hakdiv">
-                        <p>
-                            Efe Kağan Durukoğlu 2002'de Malatya'da doğdu. <br> 20 yaşında. İnönü Üniversitesi'nde Yazılım Mühendisliği öğrencisi, 1.sınıf.
-                        </p>
-                    </div>
-                </div>
+          <div class="col-md">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingPassword" placeholder="E-posta">
+              <label for="floatingPassword">E-posta</label>
             </div>
+          </div>
 
-            <div id="okul">
-                <h2 class="h2">Okul</h2>
-                <div class="textdiv">
-                    <span id="uni">İNÖNÜ ÜNİVERSİTESİ</span>
-                    <p>
-                        İnönü Üniversitesi, 28 Ocak 1975 tarihinde Türkiye Büyük Millet Meclisinde, 25 Mart 1975 tarihinde ise Cumhuriyet Senatosunda kabul edilen ve 3 Nisan 1975 tarihli Resmî Gazete'de yayımlanarak yürürlüğe giren 1872 sayılı ‘İnönü Üniversitesi Kanunu’ ile kurulmuş olup, 1976-1977 eğitim-öğretim yılından itibaren eğitim hizmeti vermeye başlamıştır. 1984 yılına kadar şimdiki Sadreddin Konevî Anadolu İmam Hatip Lisesi binasında faaliyetlerini sürdüren Üniversitemiz, 1984-1985 Akademik Yılında mevcut yerleşkesine geçmiş ve hızla gelişmeye başlamıştır.
-                    </p>
-                    <p>
-                        Ülkemizin saygın ve köklü üniversiteleri arasında yer alan İnönü Üniversitesi, 14 Fakülte, 1’i Devlet Konservatuvarı olmak üzere 2 yüksekokulu, 4 meslek yüksekokulu, 6 enstitü, 1 teknokent, Turgut Özal Tıp Merkezinin de aralarında bulunduğu 31 araştırma ve uygulama merkeziyle yaklaşık 40.000 öğrenciye eğitim ve öğretim hizmeti veren bir üniversitedir. Şehir merkezine 10 km mesafede bulunan üniversitemiz, 7000 dekarlık merkez yerleşkesinin yanında şehir merkezinde bulunan Malatya Meslek Yüksekokulu ve Malatya Organize Sanayi Bölgesinde yer alan Malatya OSB Meslek Yüksekokulu kampüsleriyle eğitim-öğretim, bilimsel araştırma ve uygulama faaliyetlerini sürdürmektedir.
-                    </p>
-                    <p>
-                        1975 yılından bugüne hızla gelişen ve büyüyen üniversitemiz, bugüne kadar yaklaşık 150.000 mezun vererek ülkemizin bilim, düşünce, sanat, ekonomi ve sosyal alanlarında kendini ispat eden on binlerce nitelikli insan kaynağı yetiştirmiştir. İnönü Üniversitesi bugün de yüksek eğitim olanakları ve giderek artan başarı ivmesiyle ülkemizin ve bölgemizin aydınlık geleceğine katkı sağlamaya devam etmektedir.
-                    </p>
-                    <p>
-                        Yerleşke alanı; yeterli altyapısı ve nitelikli eğitim tesisleriyle olduğu kadar, çok amaçlı kültür salonları, sosyal tesisleri, spor ve rekreasyon alanları ile öğrencilerin ders dışı zamanlarını en verimli biçimde değerlendirmelerine olanak sunmaktadır. Engellilere yönelik eğitim ve uygulama merkezlerinin yanında ‘Engelsiz Kampüs’ anlayışıyla da Türkiye'nin önde gelen üniversitelerinden biridir. Merkez yerleşkemizde öğrencilerimiz için özel kız ve erkek öğrenci yurtlarıyla barınma olanakları da mevcuttur.
-                    </p>
-                    <p>
-                        Ayrıca merkez yerleşkemizde, Üniversitemizin adını taşıdığı büyük devlet adamı İsmet İnönü’nün anısına açılmış olan İnönü Müzesi ile Fen Edebiyat Fakültesi binasında İnönü Üniversitesi Kurumsal Müzesi bulunmaktadır.
-                    </p>
-                </div>
+          <div class="col-md">
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="floatingPassword" placeholder="Telefon">
+              <label for="floatingPassword">Telefon</label>
             </div>
+          </div>
 
-            <div id="iletisim">
-                <h2 class="h2">İletişim</h2>
-                <div class="textdiv">
-                    <input class="ii" id="name" type="text" autocomplete="off" placeholder="AD" onfocus="this.placeholder=''" onblur="this.placeholder='AD'">
-                    <input class="ii" id="surname" type="text" autocomplete="off" placeholder="SOYAD" onfocus="this.placeholder=''" onblur="this.placeholder='SOYAD'"><br>
-                    <input class="ii" id="email" type="email" autocomplete="off" placeholder="E-POSTA" onfocus="this.placeholder=''" onblur="this.placeholder='E-POSTA'">
-                    <input class="ii" id="tel" type="tel" autocomplete="off" placeholder="TELEFON" onfocus="this.placeholder=''" onblur="this.placeholder='TELEFON'"><br>
-                    <button id="gonder">Gönder</button>
-                </div>
-            </div>
         </div>
 
-        <div id="footer">
-            <div class="baslik"><strong>Efe Durukoğlu</strong></div><br>
-            <div id="footerdiv">Bana ulaş: ornek123@gmail.com</div>
+        <div class="row">
+          <div class="col-md">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Mesaj" id="floatingTextarea" style="height: 150px;"></textarea>
+              <label for="floatingTextarea">Mesaj</label>
+            </div>
+          </div>
         </div>
-    </body>
+
+        <div class="d-grid gap-2 col-3 mx-auto mt-3">
+          <button class="btn btn-primary" type="button">Gönder</button>
+        </div>
+
+      </div>
+      <hr>
+    </div>
+    <!---->
+
+    <!-- Footer -->
+      <div class="text-light text-center footer mb-0" style="font-family: 'Quicksand', sans-serif;">
+        <p class="aign-middle p-3 mb-0 fs-5">
+          <span>Efe Durukoğlu</span><br>
+          <span>ornek123@gmail.com</span>
+        </p>
+      </div>
+    <!---->
+
+  </body>
 </html>

@@ -1,8 +1,8 @@
 {
-    "isim" : "Efe",
-    "soyisim" : "Durukoğlu",
-    "okul" : "İnönü Üniversitesi",
-    "bölüm" : "Yazılım Mühendisliği",
-    "bildiğim diller" : ["C","Java","HTML","JavaScript"],
-    "yabancı dil" : "İngilizce"
+    "Isim" : "Efe",
+    "Soyisim" : "Durukoglu",
+    "Okul" : "Inonu Universitesi",
+    "Bolum" : "Yazilim Muhendisligi",
+    "Bildigim Diller" : ["C","Java","HTML","JavaScript"],
+    "Yabanci Dil" : "Ingilizce"
 }
